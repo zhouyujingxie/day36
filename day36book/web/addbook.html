@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加图书</title>
+</head>
+<body>
+<h1>添加图书</h1>
+<form action="addbookservlet" method="post" enctype="application/x-www-form-urlencoded" >
+    <table>
+        <tr>
+            <td>书名</td>
+            <td>
+                <input type="text" name="title">
+            </td>
+        </tr>
+        <tr>
+            <td>作者</td>
+            <td>
+                <input type="text" name="author">
+            </td>
+        </tr>
+        <tr>
+            <td>出版时间</td>
+            <td>
+                <input type="date" name="publicDate">
+            </td>
+        </tr>
+        <tr>
+            <td>出版社</td>
+            <td>
+                <input type="text" name="publisher">
+            </td>
+        </tr>
+        <tr>
+            <td>ISBN</td>
+            <td>
+                <input type="text" name="isbn">
+            </td>
+        </tr>
+        <tr>
+            <td>价格</td>
+            <td>
+                <input type="number" name="price">
+            </td>
+        </tr>
+    <tr>
+        <td>图书类别</td>
+        <td>
+        <select name="cid">
+            <option value="10">科技</option>
+            <option value="11">教育</option>
+            <option value="12">小说</option>
+            <option value="13">文艺</option>
+            <option value="14">经管</option>
+            <option value="15">成功</option>
+            <option value="16">生活</option>
+
+        </select>
+        </td>
+    </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="添加">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
